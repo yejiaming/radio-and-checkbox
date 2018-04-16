@@ -70,8 +70,8 @@
 
 * 演示效果
 
-[radio](https://chun-cssshi-xian-radioxuan-zhong-xiao-guo--yejiaming.repl.co/)
-[checkbox](https://Chun-CSSShi-Xian-checkboxXuan-Zhong-Xiao-Guo--yejiaming.repl.co)
+    * [radio](https://chun-cssshi-xian-radioxuan-zhong-xiao-guo--yejiaming.repl.co/)
+    * [checkbox](https://Chun-CSSShi-Xian-checkboxXuan-Zhong-Xiao-Guo--yejiaming.repl.co)
 
 ## reset-checkbox
 * reset-checkbox原理是一样的就不在赘述了。
