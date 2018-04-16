@@ -1,0 +1,69 @@
+<div>
+    <div class="reset-checkbox">
+        <input checked type="checkbox" id="age1" name="age">
+        <span class="real-target"></span>
+    </div>
+    <label for="age1">16</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="reset-checkbox">
+        <input type="checkbox" name="age" id="age2">
+        <span class="real-target"></span>
+    </div>
+    <label for="age2">18</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="reset-checkbox">
+        <input type="checkbox" name="age" id="age3">
+        <span class="real-target"></span>
+    </div>
+    <label for="age3">20</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<style type="text/css">
+.reset-checkbox {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.reset-checkbox .real-target {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #d8d8d8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.reset-checkbox input[type=checkbox] {
+    cursor: pointer;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.reset-checkbox input:checked+span {
+    border-color: #48b4ec;
+    background: #00b4ed;
+}
+
+.reset-checkbox input:checked+span::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 9px;
+    top: 30%;
+    left: 50%;
+    border: 2px solid;
+    border-color: transparent #fff #fff transparent;
+    transform: translate(-50%, -50%) rotate(39deg);
+}
+</style>
